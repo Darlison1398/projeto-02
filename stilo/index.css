@@ -1,0 +1,131 @@
+body{
+    background-color: rgba(187, 231, 142, 0.856);
+    font-size: 12pt;
+}
+
+nav{
+    background-color: rgb(10, 10, 10);
+    padding: 0 20px;
+    justify-content: space-between;
+    color: white;
+}
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+}
+li{
+    list-style: none;
+    padding: 0 20px;
+    text-overflow:ellipsis;
+    transition: 0.5s;
+
+
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: rgb(217, 230, 230);
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+
+}
+button:focus ~ li{
+    height: 30px;
+}
+
+li:hover, h1:hover, button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgb(193, 194, 204);
+}
+
+@media(max-width: 700px){
+    nav, li{
+        flex-direction: column;
+    }
+
+    li{
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav{
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    h1{
+        margin: 10px;
+    }
+
+    button{
+        display: flex;
+    }
+    li{
+        width: 100px;
+    }
+}
+
+
+section{
+    background-color: rgb(209, 189, 98);
+    
+}
+
+dl{
+    float:left;
+}
+
+.mer{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 0 15px;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    border-radius: 50%;
+    position:relative;
+    background: rgb(245, 151, 148);
+    text-align: center;
+    line-height: 100px;
+    
+
+}
+
+.res{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 0 15px;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    border-radius: 50%;
+    text-align: center;
+    position:relative;
+    background: rgb(224, 236, 50);
+    line-height: 100px;
+    text-align: center;
+    
+}
+
+.lo{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 0 15px;
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    border-radius: 50%;
+    text-align: center;
+    position:relative;
+    background: rgb(185, 182, 161);
+    line-height: 100px;
+    text-align: center;
+}
